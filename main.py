@@ -141,7 +141,7 @@ def prepare_dataset():
         letters_read = np.array([letter] * images_read.shape[0])
         images.append(images_read)
         letters.append(letters_read)
-        
+
     images = np.vstack(images)
     letters = np.concatenate(letters)
     np.save("X.npy", images)
